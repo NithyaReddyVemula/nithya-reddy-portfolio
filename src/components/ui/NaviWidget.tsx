@@ -38,6 +38,10 @@ export function NaviWidget() {
           messages: [...messages, userMsg].map((m) => ({ role: m.role, content: m.content })),
         }),
       });
+      if (!res.ok) {
+        const errText = await res.text();
+        throw new Error(errText || `API error ${res.status}`);
+      }
       if (!res.body) return;
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
@@ -50,11 +54,12 @@ export function NaviWidget() {
           m.map((msg) => msg.id === assistantId ? { ...msg, content: accumulated } : msg)
         );
       }
-    } catch {
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : "Sorry, I had trouble connecting. Please try again!";
       setMessages((m) =>
-        m.map((msg) => msg.id === assistantId
-          ? { ...msg, content: "Sorry, I had trouble connecting. Please try again!" }
-          : msg)
+        m.map((msg2) => msg2.id === assistantId
+          ? { ...msg2, content: msg }
+          : msg2)
       );
     } finally {
       setIsLoading(false);
