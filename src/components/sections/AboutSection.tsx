@@ -78,7 +78,7 @@ export function AboutSection() {
             { value: 3, suffix: "+", label: "Years Experience", color: "#be185d" },
             { value: 35, suffix: "%", label: "Error Reduction", color: "#7c2d6b" },
             { value: 70, suffix: "%", label: "Stakeholder Adoption", color: "#f9a8d4" },
-            { value: 150, suffix: "+", label: "Students Trained", color: "#be185d" },
+            { value: 90, suffix: "%", label: "Faster Reporting", color: "#be185d" },
           ].map((stat) => (
             <div
               key={stat.label}
