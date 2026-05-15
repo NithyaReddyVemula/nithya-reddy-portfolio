@@ -8,8 +8,8 @@ export const PROJECTS: Project[] = [
     description:
       "HEDIS quality compliance dashboard for 500+ synthetic patients — care gap analysis, payer-level filtering, and one-click CSV export for health system reporting.",
     techStack: ["React", "FastAPI", "PostgreSQL", "Recharts", "HEDIS"],
-    liveUrl: "https://healthmetrics-frontend.onrender.com",
-    githubUrl: "https://github.com/sathishlella/healthmetrics-pro",
+    liveUrl: "https://healthmetrics-web.onrender.com",
+    githubUrl: "https://github.com/NithyaReddyVemula/healthmetrics-pro",
     color: "#be185d",
     metrics: [
       { label: "Patients", value: "500+" },
@@ -25,8 +25,8 @@ export const PROJECTS: Project[] = [
     description:
       "Live transaction stream via WebSocket with dual Z-score + IQR anomaly detection. Flags outliers in real time with a D3 risk gauge and flash alerts.",
     techStack: ["React", "FastAPI", "WebSockets", "D3.js", "PostgreSQL"],
-    liveUrl: "https://datapulse-frontend.onrender.com",
-    githubUrl: "https://github.com/sathishlella/datapulse",
+    liveUrl: "https://datapulse-web.onrender.com",
+    githubUrl: "https://github.com/NithyaReddyVemula/datapulse",
     color: "#7c2d6b",
     metrics: [
       { label: "TX/Second", value: "~5" },
@@ -42,8 +42,8 @@ export const PROJECTS: Project[] = [
     description:
       "Upload any CSV, define quality rules (null %, duplicates, range, format), schedule automated checks, and get email alerts when quality drops below threshold.",
     techStack: ["React", "FastAPI", "APScheduler", "Resend", "PostgreSQL"],
-    liveUrl: "https://datawatchdog-frontend.onrender.com",
-    githubUrl: "https://github.com/sathishlella/datawatchdog",
+    liveUrl: "https://datawatchdog-web.onrender.com",
+    githubUrl: "https://github.com/NithyaReddyVemula/datawatchdog",
     color: "#4a1340",
     metrics: [
       { label: "Check Types", value: "5" },

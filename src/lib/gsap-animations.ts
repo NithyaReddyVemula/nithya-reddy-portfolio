@@ -94,18 +94,20 @@ export function animateHeroName(element: HTMLElement) {
     const span = document.createElement("span");
     span.textContent = char === " " ? " " : char;
     span.style.display = "inline-block";
-    span.style.opacity = "0";
-    span.style.transform = "translateY(20px)";
     element.appendChild(span);
     return span;
   });
 
-  gsap.to(chars, {
-    opacity: 1,
-    y: 0,
-    duration: 0.06,
-    stagger: 0.05,
-    ease: "power2.out",
-    delay: 0.5,
-  });
+  gsap.fromTo(
+    chars,
+    { opacity: 0, y: 24 },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 0.55,
+      stagger: 0.045,
+      ease: "power3.out",
+      delay: 0.3,
+    }
+  );
 }
