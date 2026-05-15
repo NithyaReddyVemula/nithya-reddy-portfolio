@@ -1,7 +1,9 @@
-import OpenAI from "openai";
+import Groq from "groq-sdk";
 import { NAVI_SYSTEM_PROMPT } from "@/lib/navi-system-prompt";
 
 export const runtime = "nodejs";
+
+const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 export async function POST(req: Request) {
   if (!process.env.GROQ_API_KEY) {
@@ -10,13 +12,10 @@ export async function POST(req: Request) {
       { status: 503, headers: { "Content-Type": "text/plain; charset=utf-8" } }
     );
   }
-  const openai = new OpenAI({
-    apiKey: process.env.GROQ_API_KEY,
-    baseURL: "https://api.groq.com/openai/v1",
-  });
+
   const { messages } = await req.json();
 
-  const stream = await openai.chat.completions.create({
+  const stream = await groq.chat.completions.create({
     model: "llama-3.3-70b-versatile",
     messages: [{ role: "system", content: NAVI_SYSTEM_PROMPT }, ...messages],
     max_tokens: 300,
