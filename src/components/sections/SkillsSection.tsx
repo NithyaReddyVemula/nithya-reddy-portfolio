@@ -6,8 +6,8 @@ import { SKILLS } from "@/lib/projects-data";
 const CLUSTERS = {
   analytics: { label: "Analytics & Data", color: "#be185d" },
   visualization: { label: "Visualization", color: "#7c2d6b" },
-  cloud: { label: "Cloud & Data Eng", color: "#4a1340" },
-  healthcare: { label: "Healthcare & ML", color: "#f9a8d4" },
+  cloud: { label: "Cloud & Data Eng", color: "#7c3aed" },
+  healthcare: { label: "ML & Tools", color: "#ec4899" },
 } as const;
 
 export function SkillsSection() {

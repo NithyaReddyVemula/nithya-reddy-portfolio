@@ -55,7 +55,7 @@ export function HeroSection() {
           textTransform: "uppercase", letterSpacing: "0.2em", marginBottom: 16,
           fontFamily: "var(--font-jetbrains-mono)",
         }}>
-          Data Analyst · Health Informatics · AI
+          Data Analyst · Data Analytics Engineering · AI
         </div>
 
         <h1 ref={nameRef} style={{
@@ -74,7 +74,7 @@ export function HeroSection() {
           color: "#94a3b8", fontWeight: 400, letterSpacing: "0.05em",
           maxWidth: 600,
         }}>
-          Turning clinical and financial data into decisions that matter.
+          Turning complex data into decisions that matter.
         </p>
 
         <div ref={ctaRef} style={{

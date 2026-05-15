@@ -29,8 +29,8 @@ export function ContactSection() {
         Let&apos;s work together.
       </h2>
       <p style={{ color: "#94a3b8", marginBottom: 48, fontSize: "1rem" }}>
-        Interested in data analyst or health informatics roles — open to full-time
-        positions and contract engagements.
+        Open to data analyst and data engineering roles — full-time positions
+        and contract engagements in Dallas, TX and remote.
       </p>
 
       {sent ? (
@@ -65,9 +65,9 @@ export function ContactSection() {
 
       <div style={{ marginTop: 60, display: "flex", gap: 32, justifyContent: "center" }}>
         {[
-          { label: "LinkedIn", url: "https://linkedin.com/in/nithyareddyvemula" },
-          { label: "GitHub", url: "https://github.com/nithyareddy" },
-          { label: "Email", url: "mailto:nithya@example.com" },
+          { label: "LinkedIn", url: "https://www.linkedin.com/in/nithyareddyvemula/" },
+          { label: "GitHub", url: "https://github.com/NithyaReddyVemula" },
+          { label: "Email", url: "mailto:nithyareddyvemula72@gmail.com" },
         ].map((link) => (
           <a key={link.label} href={link.url} target="_blank" rel="noopener noreferrer"
             style={{
@@ -84,7 +84,7 @@ export function ContactSection() {
 
       <div style={{ textAlign: "center", marginTop: 60,
         fontSize: "0.72rem", color: "#4a1340" }}>
-        © 2025 Nithya Reddy Vemula · Built with Next.js + Spline + GSAP
+        © 2026 Nithya Reddy Vemula · Built with Next.js + GSAP
       </div>
     </section>
   );

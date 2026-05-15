@@ -27,18 +27,19 @@ export function AboutSection() {
             color: "#fdf2f8", lineHeight: 1.1, marginBottom: 24,
           }}>
             Data that tells a story.
-            <span style={{ color: "#be185d" }}> Analytics</span> that drives action.
+            <span style={{ color: "#be185d" }}> Insights</span> that drive action.
           </h2>
 
           <p className="about-text" style={{ color: "#94a3b8", lineHeight: 1.8, fontSize: "1rem", marginBottom: 16 }}>
-            I&apos;m Nithya Reddy Vemula — a data analyst with deep roots in healthcare informatics
-            and a passion for turning messy clinical data into decisions that improve patient outcomes.
+            I&apos;m Nithya Reddy Vemula — a data analyst with 3+ years of experience turning
+            complex, multi-source data into actionable business insights across healthcare
+            workforce and consumer banking analytics.
           </p>
 
           <p className="about-text" style={{ color: "#94a3b8", lineHeight: 1.8, fontSize: "1rem" }}>
-            From mapping HEDIS measures at Dallas College to building real-time risk dashboards
-            at JPMorgan Chase, I bring both healthcare domain expertise and modern engineering
-            skills to every problem I touch.
+            From automating federal DOL compliance workflows at Dallas College to detecting
+            fraud patterns at JPMorgan Chase, I bring deep SQL expertise, cloud data
+            engineering skills, and a passion for data storytelling through Tableau and Power BI.
           </p>
 
           <div className="about-text" style={{ marginTop: 28 }}>
@@ -57,9 +58,9 @@ export function AboutSection() {
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 32 }}>
           {[
             { value: 3, suffix: "+", label: "Years Experience", color: "#be185d" },
-            { value: 115, suffix: "+", label: "Data Elements Mapped", color: "#7c2d6b" },
-            { value: 70, suffix: "%", label: "Clinician Adoption Rate", color: "#f9a8d4" },
-            { value: 35, suffix: "%", label: "Error Reduction", color: "#be185d" },
+            { value: 35, suffix: "%", label: "Error Reduction", color: "#7c2d6b" },
+            { value: 70, suffix: "%", label: "Stakeholder Adoption", color: "#f9a8d4" },
+            { value: 150, suffix: "+", label: "Students Trained", color: "#be185d" },
           ].map((stat) => (
             <div key={stat.label} className="about-text" style={{
               background: "#0f060f", border: "1px solid #4a134066",
