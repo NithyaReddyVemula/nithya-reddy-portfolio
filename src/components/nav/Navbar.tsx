@@ -28,16 +28,30 @@ export function Navbar() {
         borderBottom: scrolled ? "1px solid rgba(74,19,64,0.4)" : "none",
       }}
     >
-      <div
-        style={{
-          fontFamily: "var(--font-space-grotesk)",
-          fontWeight: 900,
-          fontSize: "1.1rem",
-          color: "#f9a8d4",
-          letterSpacing: "0.1em",
-        }}
-      >
-        NR
+      <div className="flex items-center gap-3">
+        <img
+          src="/resized.png"
+          alt="Nithya Reddy"
+          className="rounded-full object-cover"
+          style={{
+            width: 36,
+            height: 36,
+            border: "2px solid #be185d44",
+            boxShadow: "0 0 12px #be185d33",
+          }}
+        />
+        <span
+          className="hidden sm:inline"
+          style={{
+            fontFamily: "var(--font-space-grotesk)",
+            fontWeight: 900,
+            fontSize: "1.1rem",
+            color: "#f9a8d4",
+            letterSpacing: "0.1em",
+          }}
+        >
+          NR
+        </span>
       </div>
 
       {/* Desktop links */}
