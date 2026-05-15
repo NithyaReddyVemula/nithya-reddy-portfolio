@@ -20,11 +20,11 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nithya Reddy Vemula — Data Analyst · Health Informatics · AI",
+  title: "Nithya Reddy Vemula - Data Analyst · Health Informatics · AI",
   description:
     "Portfolio of Nithya Reddy Vemula, MS Health Informatics at GMU. Data analyst specializing in healthcare analytics, real-time data pipelines, and AI-powered insights.",
   openGraph: {
-    title: "Nithya Reddy Vemula — Data Analyst",
+    title: "Nithya Reddy Vemula - Data Analyst",
     description: "Healthcare analytics, real-time data, AI insights",
     images: ["/og-image.png"],
   },

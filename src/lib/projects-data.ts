@@ -6,7 +6,7 @@ export const PROJECTS: Project[] = [
     name: "HealthMetrics Pro",
     tagline: "Clinical Quality Intelligence Dashboard",
     description:
-      "HEDIS quality compliance dashboard for 500+ synthetic patients — care gap analysis, payer-level filtering, and one-click CSV export for health system reporting.",
+      "HEDIS quality compliance dashboard for 500+ synthetic patients - care gap analysis, payer-level filtering, and one-click CSV export for health system reporting.",
     techStack: ["React", "FastAPI", "PostgreSQL", "Recharts", "HEDIS"],
     liveUrl: "https://healthmetrics-web.onrender.com",
     githubUrl: "https://github.com/NithyaReddyVemula/healthmetrics-pro",
@@ -60,7 +60,7 @@ export const EXPERIENCES = [
     role: "Data Analyst",
     period: "Sep 2025 – Present",
     bullets: [
-      "Built end-to-end ETL workflow for a federal DOL healthcare project integrating Power Apps, Power Automate, and SQL — reducing data entry errors by 35% across 9 partner organizations",
+      "Built end-to-end ETL workflow for a federal DOL healthcare project integrating Power Apps, Power Automate, and SQL - reducing data entry errors by 35% across 9 partner organizations",
       "Automated WIOA/PIRL compliance validation with SQL and Python to enforce federal data governance standards for PII-sensitive data",
       "Migrated Excel reports to Tableau and Power BI dashboards; trained 70+ users achieving 70% stakeholder adoption",
     ],
@@ -85,7 +85,7 @@ export const EXPERIENCES = [
     period: "Aug 2023 – Aug 2024",
     bullets: [
       "Analyzed student performance and engagement data with Python and R; A/B testing reduced course churn by 15%",
-      "Trained 150+ students on optimized SQL queries — cutting execution time from 30 seconds to under 5 seconds",
+      "Trained 150+ students on optimized SQL queries - cutting execution time from 30 seconds to under 5 seconds",
       "Designed Tableau dashboards with drill-down features to track enrollment KPIs for university stakeholders",
     ],
     color: "#f9a8d4",

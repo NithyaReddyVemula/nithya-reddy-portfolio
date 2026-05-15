@@ -1,7 +1,7 @@
 "use client";
 
 /* ─── All animations use IntersectionObserver + CSS transitions ─── */
-/* No GSAP dependency — eliminates StrictMode double-invocation issues */
+/* No GSAP dependency - eliminates StrictMode double-invocation issues */
 
 export function registerGSAP() {
   /* no-op: kept for API compatibility with existing callers */

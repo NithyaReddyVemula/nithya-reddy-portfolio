@@ -8,7 +8,7 @@ const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 export async function POST(req: Request) {
   if (!process.env.GROQ_API_KEY) {
     return new Response(
-      "N.A.V.I. is offline — API key not configured. Please contact Nithya directly!",
+      "N.A.V.I. is offline - API key not configured. Please contact Nithya directly!",
       { status: 503, headers: { "Content-Type": "text/plain; charset=utf-8" } }
     );
   }
