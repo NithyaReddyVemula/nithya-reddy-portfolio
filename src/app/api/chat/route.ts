@@ -4,17 +4,20 @@ import { NAVI_SYSTEM_PROMPT } from "@/lib/navi-system-prompt";
 export const runtime = "nodejs";
 
 export async function POST(req: Request) {
-  if (!process.env.OPENAI_API_KEY) {
+  if (!process.env.GROQ_API_KEY) {
     return new Response(
-      "N.A.V.I. is offline — OpenAI API key not configured. Please contact Nithya directly!",
+      "N.A.V.I. is offline — API key not configured. Please contact Nithya directly!",
       { status: 503, headers: { "Content-Type": "text/plain; charset=utf-8" } }
     );
   }
-  const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+  const openai = new OpenAI({
+    apiKey: process.env.GROQ_API_KEY,
+    baseURL: "https://api.groq.com/openai/v1",
+  });
   const { messages } = await req.json();
 
   const stream = await openai.chat.completions.create({
-    model: "gpt-4o-mini",
+    model: "llama-3.3-70b-versatile",
     messages: [{ role: "system", content: NAVI_SYSTEM_PROMPT }, ...messages],
     max_tokens: 300,
     temperature: 0.7,
