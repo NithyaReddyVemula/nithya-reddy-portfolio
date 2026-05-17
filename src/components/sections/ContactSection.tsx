@@ -45,8 +45,8 @@ export function ContactSection() {
         Let&apos;s work together.
       </h2>
       <p style={{ color: "#94a3b8", marginBottom: 48, fontSize: "1rem" }}>
-        Open to data analyst and data engineering roles - full-time positions
-        and contract engagements in Dallas, TX and remote.
+        Open to Data Analyst, Business Intelligence and Analytics Engineering
+        opportunities across full-time, consulting, and contract roles.
       </p>
 
       {sent ? (
@@ -103,15 +103,15 @@ export function ContactSection() {
         style={{ marginTop: 60 }}
       >
         {[
-          { label: "LinkedIn", url: "https://www.linkedin.com/in/nithyareddyvemula/" },
-          { label: "GitHub", url: "https://github.com/NithyaReddyVemula" },
-          { label: "Email", url: "mailto:nithyareddyvemula72@gmail.com" },
+          { label: "LinkedIn", url: "https://www.linkedin.com/in/nithyareddyvemula/", external: true },
+          { label: "GitHub", url: "https://github.com/NithyaReddyVemula", external: true },
+          { label: "Email", url: "mailto:nithyareddyvemula72@gmail.com", external: false },
         ].map((link) => (
           <a
             key={link.label}
             href={link.url}
-            target="_blank"
-            rel="noopener noreferrer"
+            target={link.external ? "_blank" : undefined}
+            rel={link.external ? "noopener noreferrer" : undefined}
             className="text-xs font-bold uppercase tracking-wider transition-colors duration-200 hover:text-rose-noir-blossom"
             style={{
               color: "#64748b",
@@ -133,7 +133,7 @@ export function ContactSection() {
           color: "#4a1340",
         }}
       >
-        © 2026 Nithya Reddy Vemula · Built with Next.js + GSAP
+        © 2026 Nithya Reddy Vemula
       </div>
     </section>
   );

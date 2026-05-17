@@ -112,24 +112,41 @@ export function ExperienceSection() {
               <div style={{ fontSize: "0.85rem", color: "#94a3b8", marginBottom: 14 }}>
                 {exp.role}
               </div>
-              <ul style={{ listStyle: "none", padding: 0 }}>
-                {exp.bullets.map((b, bi) => (
-                  <li
-                    key={bi}
+
+              {exp.clients.map((client) => (
+                <div key={client.name} style={{ marginBottom: 16 }}>
+                  <div
                     style={{
-                      fontSize: "0.82rem",
-                      color: "#c4b0cc",
-                      lineHeight: 1.6,
-                      paddingLeft: 16,
-                      position: "relative",
-                      marginBottom: 6,
+                      fontSize: "0.75rem",
+                      fontWeight: 700,
+                      color: exp.color,
+                      textTransform: "uppercase",
+                      letterSpacing: "0.08em",
+                      marginBottom: 8,
                     }}
                   >
-                    <span style={{ position: "absolute", left: 0, color: exp.color }}>→</span>
-                    {b}
-                  </li>
-                ))}
-              </ul>
+                    Client: {client.name}
+                  </div>
+                  <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                    {client.bullets.map((b, bi) => (
+                      <li
+                        key={bi}
+                        style={{
+                          fontSize: "0.82rem",
+                          color: "#c4b0cc",
+                          lineHeight: 1.6,
+                          paddingLeft: 16,
+                          position: "relative",
+                          marginBottom: 6,
+                        }}
+                      >
+                        <span style={{ position: "absolute", left: 0, color: exp.color }}>→</span>
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
         ))}
@@ -206,24 +223,41 @@ export function ExperienceSection() {
               <div style={{ fontSize: "0.82rem", color: "#94a3b8", marginBottom: 12 }}>
                 {exp.role}
               </div>
-              <ul style={{ listStyle: "none", padding: 0 }}>
-                {exp.bullets.map((b, bi) => (
-                  <li
-                    key={bi}
+
+              {exp.clients.map((client) => (
+                <div key={client.name} style={{ marginBottom: 14 }}>
+                  <div
                     style={{
-                      fontSize: "0.8rem",
-                      color: "#c4b0cc",
-                      lineHeight: 1.6,
-                      paddingLeft: 16,
-                      position: "relative",
+                      fontSize: "0.72rem",
+                      fontWeight: 700,
+                      color: exp.color,
+                      textTransform: "uppercase",
+                      letterSpacing: "0.08em",
                       marginBottom: 6,
                     }}
                   >
-                    <span style={{ position: "absolute", left: 0, color: exp.color }}>→</span>
-                    {b}
-                  </li>
-                ))}
-              </ul>
+                    Client: {client.name}
+                  </div>
+                  <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                    {client.bullets.map((b, bi) => (
+                      <li
+                        key={bi}
+                        style={{
+                          fontSize: "0.8rem",
+                          color: "#c4b0cc",
+                          lineHeight: 1.6,
+                          paddingLeft: 16,
+                          position: "relative",
+                          marginBottom: 6,
+                        }}
+                      >
+                        <span style={{ position: "absolute", left: 0, color: exp.color }}>→</span>
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
         ))}

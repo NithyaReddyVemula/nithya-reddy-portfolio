@@ -86,7 +86,7 @@ export function HeroSection() {
                   fontFamily: "var(--font-jetbrains-mono)",
                 }}
               >
-                Data Analyst · Analytics Engineering · AI
+                Data Analyst<span className="text-[0.4rem] md:text-[0.5rem] mx-0.5">·</span>Analytics Engineering<span className="text-[0.4rem] md:text-[0.5rem] mx-0.5">·</span>AI
               </span>
             </div>
 
@@ -109,9 +109,7 @@ export function HeroSection() {
               ref={subtitleRef}
               className="text-neutral-300 max-w-lg text-sm md:text-base lg:text-lg leading-relaxed mb-8 md:mb-10"
             >
-              Turning complex, multi-source data into actionable business
-              insights - 3+ years across healthcare workforce and consumer
-              banking analytics in Dallas, TX.
+              Turning complex, multi-source data into actionable business insights, with 3+ years across healthcare, workforce analytics, consumer banking risk reporting, consulting, BI dashboards, and data quality automation.
             </p>
 
             {/* CTAs */}

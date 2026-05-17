@@ -48,29 +48,20 @@ export function AboutSection() {
             className="about-text"
             style={{ color: "#94a3b8", lineHeight: 1.8, fontSize: "1rem", marginBottom: 16 }}
           >
-            I&apos;m Nithya Reddy Vemula - a data analyst with 3+ years of experience turning
-            complex, multi-source data into actionable business insights across healthcare
-            workforce and consumer banking analytics.
+            I&apos;m Nithya Reddy Vemula, a Data Analyst with 3+ years of experience turning
+            complex, multi-source data into actionable business insights across healthcare,
+            workforce analytics, consumer banking, and consulting.
           </p>
 
           <p
             className="about-text"
             style={{ color: "#94a3b8", lineHeight: 1.8, fontSize: "1rem" }}
           >
-            From automating federal DOL compliance workflows at Dallas College to detecting
-            fraud patterns at JPMorgan Chase, I bring deep SQL expertise, cloud data
-            engineering skills, and a passion for data storytelling through Tableau and Power BI.
+            From automating federal compliance reporting workflows to analyzing healthcare
+            claims, patient outcomes, fraud patterns, credit-risk indicators, and customer
+            behavior, I bring strong SQL expertise, cloud analytics experience, and a passion
+            for data storytelling through Tableau and Power BI.
           </p>
-
-          <div className="about-text" style={{ marginTop: 28 }}>
-            <ShinyButton
-              href="/resume.pdf"
-              download
-              style={{ padding: "10px 24px", fontSize: "0.82rem" }}
-            >
-              ↓ Download Resume
-            </ShinyButton>
-          </div>
         </div>
 
         <div className="grid grid-cols-2 gap-4 md:gap-8">
