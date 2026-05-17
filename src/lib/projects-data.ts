@@ -64,15 +64,27 @@ export interface Experience {
   role: string;
   period: string;
   color: string;
-  clients: ExperienceClient[];
+  bullets?: string[];
+  clients?: ExperienceClient[];
 }
 
 export const EXPERIENCES: Experience[] = [
   {
+    company: "Dallas College",
+    role: "Data Analyst",
+    period: "Sep 2025 - Present",
+    bullets: [
+      "Built end-to-end ETL workflow for a federal DOL healthcare project integrating Power Apps, Power Automate, and SQL - reducing data entry errors by 35% across 9 partner organizations",
+      "Automated WIOA/PIRL compliance validation with SQL and Python to enforce federal data governance standards for PII-sensitive data",
+      "Migrated Excel reports to Tableau and Power BI dashboards; trained 70+ users achieving 70% stakeholder adoption",
+    ],
+    color: "#be185d",
+  },
+  {
     company: "Brooklyn Consulting",
     role: "Data Analyst",
-    period: "Aug 2020 - Present",
-    color: "#be185d",
+    period: "Aug 2024 - Sep 2025",
+    color: "#7c2d6b",
     clients: [
       {
         name: "Financial Services",
@@ -80,23 +92,38 @@ export const EXPERIENCES: Experience[] = [
           "Analyzed high-volume transaction data in Snowflake and AWS Redshift to detect fraud indicators and credit-risk shifts, improving risk-review accuracy by 18%",
           "Optimized ETL pipelines in Databricks using PySpark, cutting job runtime from 2 hours to under 30 minutes",
           "Built Tableau dashboards integrating dispute KPIs and retention metrics, eliminating 6 hours of manual reporting per week",
-          "Migrated legacy data to Azure Synapse Analytics via Azure Data Factory and Databricks (PySpark), improving integration reliability and consistency",
-          "Built Power BI and Tableau executive dashboards integrating multi-source data, reducing decision turnaround time by 40%",
-          "Conducted data lineage root-cause analysis across Snowflake and AWS Redshift, improving data reliability by 20%",
         ],
       },
       {
         name: "Healthcare",
         bullets: [
-          "Built end-to-end ETL workflow for a federal DOL healthcare project integrating Power Apps, Power Automate, and SQL - reducing data entry errors by 35% across 9 partner organizations",
-          "Automated WIOA/PIRL compliance validation with SQL and Python to enforce federal data governance standards for PII-sensitive data",
-          "Migrated Excel reports to Tableau and Power BI dashboards; trained 70+ users achieving 70% stakeholder adoption",
-          "Analyzed student performance and engagement data with Python and R; A/B testing reduced course churn by 15%",
-          "Trained 150+ students on optimized SQL queries - cutting execution time from 30 seconds to under 5 seconds",
-          "Designed Tableau dashboards with drill-down features to track enrollment KPIs for university stakeholders",
+          "Extracted and analyzed large-scale EHR and claims data using SQL, Python, and Apache Spark, improving clinical reporting accuracy and preventive care insights",
+          "Built Tableau and Power BI dashboards tracking patient outcomes and healthcare KPIs, helping identify high-risk patients and reducing readmissions by 15%",
         ],
       },
     ],
+  },
+  {
+    company: "George Mason University",
+    role: "Assistant Data Analyst",
+    period: "Aug 2023 - Aug 2024",
+    bullets: [
+      "Analyzed student performance and engagement data with Python and R; A/B testing reduced course churn by 15%",
+      "Trained 150+ students on optimized SQL queries - cutting execution time from 30 seconds to under 5 seconds",
+      "Designed Tableau dashboards with drill-down features to track enrollment KPIs for university stakeholders",
+    ],
+    color: "#f9a8d4",
+  },
+  {
+    company: "Deloitte",
+    role: "Data Analyst",
+    period: "Aug 2020 - Jul 2022",
+    bullets: [
+      "Migrated legacy data to Azure Synapse Analytics via Azure Data Factory and Databricks (PySpark), improving integration reliability and consistency",
+      "Built Power BI and Tableau executive dashboards integrating multi-source data, reducing decision turnaround time by 40%",
+      "Conducted data lineage root-cause analysis across Snowflake and AWS Redshift, improving data reliability by 20%",
+    ],
+    color: "#4a1340",
   },
 ];
 

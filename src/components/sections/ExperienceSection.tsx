@@ -113,7 +113,28 @@ export function ExperienceSection() {
                 {exp.role}
               </div>
 
-              {exp.clients.map((client) => (
+              {exp.bullets && (
+                <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                  {exp.bullets.map((b, bi) => (
+                    <li
+                      key={bi}
+                      style={{
+                        fontSize: "0.82rem",
+                        color: "#c4b0cc",
+                        lineHeight: 1.6,
+                        paddingLeft: 16,
+                        position: "relative",
+                        marginBottom: 6,
+                      }}
+                    >
+                      <span style={{ position: "absolute", left: 0, color: exp.color }}>→</span>
+                      {b}
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+              {exp.clients && exp.clients.map((client) => (
                 <div key={client.name} style={{ marginBottom: 16 }}>
                   <div
                     style={{
@@ -224,7 +245,28 @@ export function ExperienceSection() {
                 {exp.role}
               </div>
 
-              {exp.clients.map((client) => (
+              {exp.bullets && (
+                <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                  {exp.bullets.map((b, bi) => (
+                    <li
+                      key={bi}
+                      style={{
+                        fontSize: "0.8rem",
+                        color: "#c4b0cc",
+                        lineHeight: 1.6,
+                        paddingLeft: 16,
+                        position: "relative",
+                        marginBottom: 6,
+                      }}
+                    >
+                      <span style={{ position: "absolute", left: 0, color: exp.color }}>→</span>
+                      {b}
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+              {exp.clients && exp.clients.map((client) => (
                 <div key={client.name} style={{ marginBottom: 14 }}>
                   <div
                     style={{
